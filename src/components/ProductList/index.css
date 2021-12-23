@@ -1,0 +1,55 @@
+.div__productsList-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    padding: 2em;
+    flex: 0.6;
+    width: 500px;
+}
+
+.div__productsList-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.div__product-container {
+    display: flex;
+    height: 500px;
+}
+
+.div__productsList {
+    display: flex;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.noProducts {
+    margin: auto;
+    text-align: center;
+}
+
+.sortOptions {
+    border: 1px solid lightgray;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    z-index: 100;
+    animation: fadein 1.5s infinite 1000ms;
+}
+
+.div__productsList-sortOptions h4 {
+    z-index: 1;
+}
+
+.sortOptions p {
+    padding: 0.5em;
+}
+
+.dropdownArrow {
+    width: 25px;
+    height: 25px;
+    margin-bottom: -5px;
+}
