@@ -10,8 +10,8 @@ export const PRODUCTS_DATA = [
     ],
     price: 750,
     size: 32,
-    color: "orange",
-    category: "Flip Flops",
+    color: "blue",
+    category: "Lace-Up Shoes",
   },
   {
     id: "102",
@@ -24,7 +24,7 @@ export const PRODUCTS_DATA = [
     price: 965,
     size: 34,
     color: "black",
-    category: "Sneakers",
+    category: "Lace-Up Shoes",
   },
   {
     id: "103",
@@ -49,7 +49,7 @@ export const PRODUCTS_DATA = [
     ],
     price: 110,
     size: 38,
-    color: "green",
+    color: "yellow",
     category: "Show Accessories",
   },
   {
@@ -65,6 +65,54 @@ export const PRODUCTS_DATA = [
     color: "grey",
     category: "Show Accessories",
   },
+  {
+    id: "106",
+    name: "Black Flip Flops",
+    brandName: "Red Tape",
+    images: [
+      "https://assets.ajio.com/medias/sys_master/root/20200725/tqIW/5f1b2dd1aeb269f5fee60377/-1117Wx1400H-460665602-black-MODEL.jpg",
+    ],
+    price: 325,
+    size: 32,
+    color: "black",
+    category: "Flip Flops",
+  },
+  {
+    id: "107",
+    name: "Funky Flip Flops",
+    brandName: "Nike",
+    images: [
+      "https://assets.ajio.com/medias/sys_master/root/20210902/YoC7/613080257cdb8cb82413f036/-1117Wx1400H-460363318-black-MODEL.jpg",
+    ],
+    price: 350,
+    size: 34,
+    color: "black",
+    category: "Flip Flops",
+  },
+  {
+    id: "108",
+    name: "Funky Sneakers",
+    brandName: "Nike",
+    images: [
+      "https://i.insider.com/55a966f3371d22c6178b62ed?width=700",
+    ],
+    price: 450,
+    size: 32,
+    color: "red",
+    category: "Sneakers",
+  },
+  {
+    id: "109",
+    name: "White Sneakers",
+    brandName: "Balenciaga",
+    images: [
+      "https://www.apetogentleman.com/wp-content/uploads/2019/01/best-chunky-sneakers-men.jpg",
+    ],
+    price: 500,
+    size: 36,
+    color: "grey",
+    category: "Sneakers",
+  }
 ];
 
 export const CATGEORY_FILTERS = [
@@ -74,7 +122,7 @@ export const CATGEORY_FILTERS = [
   "Show Accessories",
 ];
 
-export const SIZE_RANGE = [35, 49];
+export const SIZE_RANGE = [30, 40];
 
 export const SORT_FIELDS = [
   { label: "Size", value: "size" },
