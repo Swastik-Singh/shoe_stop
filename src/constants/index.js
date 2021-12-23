@@ -4,9 +4,9 @@ export const PRODUCTS_DATA = [
     name: "High Speed Sneakers",
     brandName: "Balenciaga",
     images: [
-      require("../assets/Shoe1.jpg"),
-      require("../assets/Shoe2.jpg"),
-      require("../assets/Shoe3.jpg"),
+      "https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI=",
+      "https://rukminim1.flixcart.com/image/714/857/jbb3wcw0/shoe/9/b/b/44332-9-sega-star-impact-blue-original-imafymv4nux2jhwy.jpeg?q=50",
+      "https://rukminim1.flixcart.com/image/714/857/shoe/a/u/p/blue-blue-white-gravel-realflex-advance-reebok-8-original-imadqzaf8nfszccr.jpeg?q=50",
     ],
     price: 750,
     size: 32,
