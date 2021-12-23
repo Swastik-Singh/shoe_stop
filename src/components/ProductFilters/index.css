@@ -27,6 +27,7 @@
 
 .div_chkCategory {
     display: flex;
+    margin: 0em 0.8em;
 }
 
 input.chkCategory {
@@ -41,6 +42,10 @@ input.chkCategory {
 .div__productFilters-sizeInputs {
     display: flex;
     flex-wrap: wrap;
+    margin: 5px;
+}
+
+.filterLabel {
     margin: 5px;
 }
 

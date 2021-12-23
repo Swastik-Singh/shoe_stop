@@ -58,9 +58,7 @@ export default function ProductFilters() {
     <div className="div__productFilters-container">
       <div className="div__productFilters-header"></div>
       <div className="div__productFilters-categories">
-        <div className="div__filterLabel">
-          <h3>Categories</h3>
-        </div>
+        <h3 className="filterLabel">Categories</h3>
         {CATGEORY_FILTERS.map((category) => (
           <div key={category} className="div_chkCategory">
             <input
@@ -75,9 +73,7 @@ export default function ProductFilters() {
         ))}
       </div>
       <div className="div__productFilters-price">
-        <div className="div__filterLabel">
-          <h3>Price</h3>
-        </div>
+        <h3 className="filterLabel">Price</h3>
         <MultiRangeSlider
           min={100}
           max={1000}
@@ -85,9 +81,7 @@ export default function ProductFilters() {
         />
       </div>
       <div className="div__productFilters-sizes">
-        <div className="div__filterLabel">
-          <h3>Size</h3>
-        </div>
+        <h3 className="filterLabel">Size</h3>
         <div className="div__productFilters-sizeInputs">
           {generateSizeRangeList(SIZE_RANGE[0], SIZE_RANGE[1])}
         </div>

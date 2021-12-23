@@ -38,4 +38,5 @@
 
 .div__main-container {
   display: flex;
+  margin: 1.5em;
 }

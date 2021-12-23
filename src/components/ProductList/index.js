@@ -16,23 +16,6 @@ export default function ProductsList() {
     setDropdownOpen(false);
   };
 
-  const generateTwoColumnList = (inputArray) => {
-    const gridCols = [[], []];
-
-    inputArray.forEach((itemVal, index) => {
-      const comp = <ProductCard key={itemVal.id} productData={itemVal} />;
-      const colNumber = index % 2;
-      gridCols[colNumber].push(comp);
-    });
-
-    return (
-      <div className="div__product-container">
-        <div>{gridCols[0]}</div>
-        <div>{gridCols[1]}</div>
-      </div>
-    );
-  };
-
   return (
     <div className="div__productsList-container">
       <div className="div__productsList-header">
@@ -46,7 +29,9 @@ export default function ProductsList() {
           {dropdownOpen && (
             <div className="sortOptions">
               {SORT_FIELDS.map(({ label, value }) => (
-                <p key={value} onClick={() => handleSortField(value)}>{label}</p>
+                <p key={value} onClick={() => handleSortField(value)}>
+                  {label}
+                </p>
               ))}
             </div>
           )}
@@ -54,7 +39,9 @@ export default function ProductsList() {
       </div>
       <div className="div__productsList">
         {filteredProducts.length ? (
-          generateTwoColumnList(filteredProducts)
+          filteredProducts.map((product) => (
+            <ProductCard key={product.id} productData={product} />
+          ))
         ) : (
           <h1 className="noProducts">No Products found!!</h1>
         )}

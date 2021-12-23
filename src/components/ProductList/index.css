@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     border: 1px solid lightgray;
-    padding: 2em;
-    flex: 0.6;
+    padding: 1.2em;
+    flex: 0.65;
     width: 500px;
 }
 
@@ -20,6 +20,7 @@
 
 .div__productsList {
     display: flex;
+    flex-wrap: wrap;
     height: 500px;
     overflow-y: auto;
 }
@@ -31,14 +32,19 @@
 
 .sortOptions {
     border: 1px solid lightgray;
-    border-top: 0px;
     display: flex;
     flex-direction: column;
     align-self: center;
     position: absolute;
+    margin-top: 15px;
     z-index: 100;
     animation: fadein 1.5s infinite 1000ms;
 }
+
+.div__productsList-sortOptions {
+    display: flex;
+    flex-direction: column;
+} 
 
 .div__productsList-sortOptions h4 {
     z-index: 1;
