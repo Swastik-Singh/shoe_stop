@@ -14,7 +14,7 @@
     margin: 0px 5px;
 }
 
-.productName {
+.productName, .category {
     color: grey;
     margin: 5px 0px;
 }

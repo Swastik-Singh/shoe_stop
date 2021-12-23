@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "./index.css";
 
 export default function ProductCard({ productData }) {
-  const { name, brandName, images, price, color } = productData;
+  const { name, brandName, images, price, color, size, category } = productData;
   const [mainImage, setMainImage] = useState(images[0] || "");
   return (
     <div className="div__productCard">
       <div className="div__productCard-title">
         <p className="productName">{name}</p>
-        <h4 className="brandName">{brandName}</h4>
+        <h4 className="brandName">{brandName} ({size})</h4>
+        <h5 className="category">{category}</h5>
       </div>
       <div className="productIndicator" style={{ backgroundColor: color }} />
       <div className="div__productCard-image">

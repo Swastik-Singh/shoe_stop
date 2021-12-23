@@ -28,10 +28,14 @@
 .noProducts {
     margin: auto;
     text-align: center;
+    color: lightgray
 }
 
 .sortOptions {
     border: 1px solid lightgray;
+    background-color: lightgray;
+    color: white;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     align-self: center;
